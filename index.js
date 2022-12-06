@@ -309,6 +309,8 @@ function viewHideNotepad() {
     if (notepad.classList == "hideNotepad") {
         console.log(notepad);
         notepad.classList.replace("hideNotepad", "notepad")
+    } else{
+        notepad.classList.replace("notepad", "hideNotepad")
     }
 }
 
