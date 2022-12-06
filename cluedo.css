@@ -19,6 +19,7 @@
 }
 
 .window {
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,10 +71,65 @@ input {
     opacity: 0.6;
 }
 
-.none {
-    opacity: 0;
+button {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 200px;
 }
 
-.block {
-    opacity: 0;
+.btn {
+    top: 85%;
+    left: 75%;
+}
+
+.note {
+    top: 70%;
+    left: 75%;
+}
+
+.view {
+    display: block;
+    z-index: 100;
+}
+
+.hide {
+    display: block;
+    z-index: 99;
+}
+
+.notepad {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.screenHidden {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    
+}
+
+.hideNotepad {
+    display: none;
+}
+
+.screenHiddenRemoved {
+    display: none;
+}
+
+.hideRemoved {
+    display: none;
+}
+
+.viewRemoved {
+    display: none;
 }
