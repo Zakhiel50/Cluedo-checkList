@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.05rem;
+}
+
+@font-face {
+    font-family: "pythagoras";
+    src: url(pythago0.ttf);
+}
+
+.title {
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "pythagoras";
+    padding: 50px 0;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 85, 4);
+}
+
+.weapons, .suspects, .rooms {
+    width: 90%;
+    background-color: rgb(1, 148, 9);
+    margin-bottom: 50px;
+    padding: 40px 20px 10px 20px;
+    border: 2px solid rgb(0, 46, 2);
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(0, 46, 2, 0.5);
+}
+
+
+
+.infoContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-family: "pythagoras";
+    font-size: 1.4em;
+}
+
+input {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

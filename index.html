@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="toDoList.css" />
+    <title>Cluedo</title>
+    <link rel="stylesheet" href="cluedo.css" />
 </head>
-
 <body>
-    <h1 class="title">to do list</h1>
     <section class="window">
+        <h1 class="title">cluedo</h1>
 
-        <div class="sectionInsertInput">
-            <input class="insertInput" placeholder="add your task" />
-            <button class="btnAddTask" type="submit" name="AddTask" >add</button>
-        </div>
+        <section class="infoContainer">
 
+            <div class="suspects"></div>
+            <div class="weapons"></div>
+
+            <div class="rooms"></div>
+
+        </section>
         
-            <ul class="sectionTask">
-                <div class="emptySection">
-                    <p class="emptyText">It's empty here</p>
-                    <img class="emptyImg" src="empty.jpg" alt="it's empty"/>
-                </div>
-            <!--Insert task with JS here-->
-            
-            
-
-        </ul>
-        <div class="finish">
-            
-        </div>
-
     </section>
-
-    <script src="toDoList.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>
