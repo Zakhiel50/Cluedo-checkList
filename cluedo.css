@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 1.05rem;
+
 }
 
 @font-face {
@@ -30,7 +30,7 @@
     width: 90%;
     background-color: rgb(1, 148, 9);
     margin-bottom: 50px;
-    padding: 40px 20px 10px 20px;
+    padding: 40px 20px 10px 10px;
     border: 2px solid rgb(0, 46, 2);
     border-radius: 10px;
     box-shadow: 1px 3px 5px rgba(0, 46, 2, 0.5);
@@ -54,17 +54,26 @@
 
 p {
     font-family: "pythagoras";
-    font-size: 1.4em;
+    font-size: 6.8vw;
+    white-space: nowrap;
 }
 
 input {
     margin: 0 10px;
-    width: 20px;
-    height: 20px;
+    width: 6.8vw;
+    height: 6.8vw;
 
 }
 
 .checked {
     text-decoration: line-through;
     opacity: 0.6;
+}
+
+.none {
+    opacity: 0;
+}
+
+.block {
+    opacity: 0;
 }
