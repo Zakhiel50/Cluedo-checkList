@@ -269,6 +269,47 @@ function createElements(label, checkBox) {
 
 }
 
+// onclick cacher l'écran
+let btnHide = document.querySelector(".hide");
+let Hidden = document.querySelector(".removeScreenHidden")
+// onclick afficher l'écran
+let btnView = document.querySelector(".viewRemoved");
 
+// onclick ouvrir notepad
+let btnNote = document.querySelector(".note");
+
+let notepad = document.querySelector(".hideNotepad")
+// onclick fermer notepad
+console.log(btnHide);
+
+btnHide.addEventListener("click", hideScreen)
+btnView.addEventListener("click", viewScreen)
+btnNote.addEventListener("click", viewHideNotepad)
+
+
+function  hideScreen() {
+    console.log(btnHide);
+Hidden.classList.replace("removeScreenHidden", "screenHidden")
+// btnView.classList = "btn view viewRemoved"
+btnView.classList.replace("viewRemoved", "view")
+
+btnHide.classList.replace("hide", "hideRemoved")
+}
+
+function viewScreen() {
+    Hidden.classList.replace("screenHidden", "removeScreenHidden")
+    // btnView.classList = "btn view viewRemoved"
+    btnView.classList.replace("view", "viewRemoved")
+    
+    btnHide.classList.replace("hideRemoved", "hide")
+}
+
+function viewHideNotepad() {
+    
+    if (notepad.classList == "hideNotepad") {
+        console.log(notepad);
+        notepad.classList.replace("hideNotepad", "notepad")
+    }
+}
 
 createElements()
