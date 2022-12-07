@@ -1,3 +1,6 @@
+// Most of the javascript could very well have been coded in HTML to increase performance, 
+// only to practice javascript as much as possible, i choose to generate as much javascript as possible.
+// Have fun :)
 data = {
     suspects : [
         {
@@ -274,6 +277,7 @@ let btnHide = document.querySelector(".hide");
 let hidden = document.querySelector(".removeScreenHidden")
 // onclick afficher l'écran
 let btnView = document.querySelector(".viewRemoved");
+let textHide = document.querySelector(".removeTextHide")
 
 // onclick ouvrir notepad
 let btnNote = document.querySelector(".note");
@@ -296,6 +300,7 @@ hidden.classList.replace("removeScreenHidden", "screenHidden")
 btnView.classList.replace("viewRemoved", "view")
 
 btnHide.classList.replace("hide", "hideRemoved")
+textHide.classList.replace("removeTextHide", "textHide")
 }
 
 function viewScreen() {
@@ -304,6 +309,7 @@ function viewScreen() {
     btnView.classList.replace("view", "viewRemoved")
     
     btnHide.classList.replace("hideRemoved", "hide")
+    textHide.classList.replace("textHide","removeTextHide")
 }
 
 function viewHideNotepad() {

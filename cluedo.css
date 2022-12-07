@@ -68,7 +68,7 @@ input {
     margin: 0 10px;
     width: 6.8vw;
     height: 6.8vw;
-
+    opacity: 0.5;
 }
 
 .checked {
