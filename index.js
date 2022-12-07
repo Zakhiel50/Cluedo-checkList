@@ -271,7 +271,7 @@ function createElements(label, checkBox) {
 
 // onclick cacher l'écran
 let btnHide = document.querySelector(".hide");
-let Hidden = document.querySelector(".removeScreenHidden")
+let hidden = document.querySelector(".removeScreenHidden")
 // onclick afficher l'écran
 let btnView = document.querySelector(".viewRemoved");
 
@@ -284,12 +284,14 @@ console.log(btnHide);
 
 btnHide.addEventListener("click", hideScreen)
 btnView.addEventListener("click", viewScreen)
+hidden.addEventListener("click", viewScreen)
 btnNote.addEventListener("click", viewHideNotepad)
+
 
 
 function  hideScreen() {
     console.log(btnHide);
-Hidden.classList.replace("removeScreenHidden", "screenHidden")
+hidden.classList.replace("removeScreenHidden", "screenHidden")
 // btnView.classList = "btn view viewRemoved"
 btnView.classList.replace("viewRemoved", "view")
 
@@ -297,7 +299,7 @@ btnHide.classList.replace("hide", "hideRemoved")
 }
 
 function viewScreen() {
-    Hidden.classList.replace("screenHidden", "removeScreenHidden")
+    hidden.classList.replace("screenHidden", "removeScreenHidden")
     // btnView.classList = "btn view viewRemoved"
     btnView.classList.replace("view", "viewRemoved")
     

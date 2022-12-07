@@ -8,14 +8,19 @@
     font-family: "pythagoras";
     src: url(pythago0.ttf);
 }
+input, button, .screenHidden {
+    cursor: pointer;
+}
+
 
 .title {
-    font-size: 3em;
+    font-size: 4em;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     font-family: "pythagoras";
     padding: 50px 0;
+    color: white;
 }
 
 .window {
@@ -73,31 +78,41 @@ input {
 
 button {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80px;
     height: 80px;
     border-radius: 200px;
+    background-color: rgb(1, 148, 9);
+    opacity: 0.9;
+    border: 3px solid rgba(255, 255, 255, 1);
 }
 
+img {
+    width: 50px;
+    height: 40px;
+}
 .btn {
-    top: 85%;
-    left: 75%;
+    bottom: 45px;
+    right: 15px;
 }
 
 .note {
-    top: 70%;
-    left: 75%;
+    bottom: 160px;
+    right: 15px;
     z-index: 100;
 
 }
 
 .view {
     display: block;
-    z-index: 100;
+    z-index: 102;
 }
 
 .hide {
     display: block;
-    z-index: 99;
+    z-index: 100;
 }
 
 .notepad {
@@ -107,11 +122,12 @@ button {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
     background-color: rgb(1, 148, 9);
     font-size: 2.5em;
     color: black;
     font-family: "pythagoras";
+    z-index: 99;
+
 }
 
 .screenHidden {
@@ -122,7 +138,18 @@ button {
     width: 100%;
     height: 100%;
     background-color: black;
-    
+    z-index: 101;
+    color: rgb(65, 64, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textHide{
+    display: block;
+    font-size: 10vw;
+}
+.removeTextHide {
+    display: none;
 }
 
 .hideNotepad {
@@ -140,5 +167,24 @@ button {
 
 .viewRemoved {
     display: none;
+}
 
+::placeholder {
+    color: black;
+    opacity: 0.7;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    p {
+        font-size: 34px;
+    }
+    input {
+        width: 34px;
+        height: 34px;
+    
+    }
+    
 }
