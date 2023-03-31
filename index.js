@@ -43,7 +43,7 @@ data = {
     weapons: [
         {
             name:"dague",
-            label:"Dague",
+            label:"Poignard",
             checked: false
         },
 
